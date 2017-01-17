@@ -1,0 +1,40 @@
+{
+  "name": "preact-mitt-demo",
+  "version": "0.0.1",
+  "description": "a demo that uses preactjs and mitt for communcation between components",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "serve": "webpack-dev-server --debug --devtool source-map --output-pathinfo",
+    "clean": "rimraf ./dist/**/*"
+  },
+  "author": "Severin Friede <sevefriede@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/whatwg-fetch": "0.0.33",
+    "autoprefixer": "^6.6.1",
+    "compression-webpack-plugin": "^0.3.2",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^3.1.4",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.3.0",
+    "postcss-loader": "^1.2.2",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.1.1",
+    "source-map-loader": "^0.1.6",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^1.3.3",
+    "tslint": "^4.3.1",
+    "typescript": "^2.1.5",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "mitt": "^1.0.0",
+    "preact": "^7.1.0"
+  }
+}
